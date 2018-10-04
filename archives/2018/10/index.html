@@ -81,23 +81,13 @@
 
 
 
-<meta name="description" content="The first image is the input image, and next 4 is processed image, corresponding to using 1,2,4 and 16 singular values. The 16 singular value is much more better than 1,2,4 cases and show most of feat">
-<meta property="og:type" content="article">
-<meta property="og:title" content="SVD实现-穹妹的奇异值分解">
-<meta property="og:url" content="http://yoursite.com/2018/08/14/SVD实现/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="吴箫的小站">
+<meta property="og:url" content="http://yoursite.com/archives/2018/10/index.html">
 <meta property="og:site_name" content="吴箫的小站">
-<meta property="og:description" content="The first image is the input image, and next 4 is processed image, corresponding to using 1,2,4 and 16 singular values. The 16 singular value is much more better than 1,2,4 cases and show most of feat">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://yoursite.com/images/input.jpeg">
-<meta property="og:image" content="http://yoursite.com/images/output_rank_1.jpg">
-<meta property="og:image" content="http://yoursite.com/images/output_rank_2.jpg">
-<meta property="og:image" content="http://yoursite.com/images/output_rank_4.jpg">
-<meta property="og:image" content="http://yoursite.com/images/output_rank_16.jpg">
-<meta property="og:updated_time" content="2018-08-14T13:38:26.621Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SVD实现-穹妹的奇异值分解">
-<meta name="twitter:description" content="The first image is the input image, and next 4 is processed image, corresponding to using 1,2,4 and 16 singular values. The 16 singular value is much more better than 1,2,4 cases and show most of feat">
-<meta name="twitter:image" content="http://yoursite.com/images/input.jpeg">
+<meta name="twitter:title" content="吴箫的小站">
 
 
 
@@ -127,13 +117,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/08/14/SVD实现/"/>
+  <link rel="canonical" href="http://yoursite.com/archives/2018/10/"/>
 
 
 
 
 
-  <title>SVD实现-穹妹的奇异值分解 | 吴箫的小站</title>
+  <title>Archive | 吴箫的小站</title>
   
 
 
@@ -152,7 +142,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left page-archive">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -270,171 +260,74 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block archive">
+    <div id="posts" class="posts-collapse">
+      <span class="archive-move-on"></span>
 
-  
+      <span class="archive-page-counter">
+        
+        
+        
+          
+        
+        Um..! 7 posts in total. Keep on posting.
+      </span>
 
-  
-  
-  
+      
+
+        
+        
+        
+
+        
+          
+          <div class="collection-title">
+            <h1 class="archive-year" id="archive-year-2018">2018</h1>
+          </div>
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/14/SVD实现/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="吴箫">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="吴箫的小站">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
-        
-          <h1 class="post-title" itemprop="name headline">SVD实现-穹妹的奇异值分解</h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
+            <a class="post-title-link" href="/2018/10/04/马兰花开/" itemprop="url">
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span itemprop="name">Untitled</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-14T21:33:00+08:00">
-                2018-08-14
-              </time>
-            
+            </a>
+        
+      </h2>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p>The first image is the input image, and next 4 is processed image, corresponding to using 1,2,4 and 16 singular values.</p>
-<p>The 16 singular value is much more better than 1,2,4 cases and show most of features of the initial image.</p>
-<p>The code is given in image_reconstruction.py.</p>
-<a id="more"></a>
-<p>Code:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line">in_image = cv2.imread(<span class="string">"input.jpeg"</span>).astype(np.float64)</span><br><span class="line">n, d = in_image.shape[:<span class="number">2</span>]</span><br><span class="line">rk_pool = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">16</span>]</span><br><span class="line"><span class="keyword">for</span> rk <span class="keyword">in</span> rk_pool:</span><br><span class="line">    b, g, r = cv2.split(in_image)</span><br><span class="line">    image_pool = [b,g,r]</span><br><span class="line">    out_image = np.zeros((n, d, <span class="number">3</span>))</span><br><span class="line">    frob_percent = <span class="number">0.0</span></span><br><span class="line">    <span class="keyword">for</span> channel <span class="keyword">in</span> range(<span class="number">3</span>):</span><br><span class="line">        u, s, vh = np.linalg.svd(image_pool[channel], full_matrices=<span class="keyword">False</span>)</span><br><span class="line">        init_frob = np.sqrt(np.sum(s**<span class="number">2</span>))</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(rk,d):</span><br><span class="line">            s[i] = <span class="number">0.0</span></span><br><span class="line">        processed_frob = np.sqrt(np.sum(s**<span class="number">2</span>))</span><br><span class="line">        frob_percent = frob_percent + processed_frob / init_frob</span><br><span class="line">        s = np.diag(s)</span><br><span class="line">        out = np.matmul(u,np.matmul(s,vh))</span><br><span class="line">        <span class="keyword">for</span> row <span class="keyword">in</span> range(n):</span><br><span class="line">            <span class="keyword">for</span> col <span class="keyword">in</span> range(d):</span><br><span class="line">                <span class="keyword">if</span> out[row,col] &lt; <span class="number">255.0</span> <span class="keyword">and</span> out[row, col] &gt;=<span class="number">0.0</span>:</span><br><span class="line">                    out_image[row, col, channel] = out[row, col]</span><br><span class="line">                <span class="keyword">elif</span> out[row, col] &gt;=<span class="number">255.0</span>:</span><br><span class="line">                    out_image[row, col, channel] = <span class="number">255.0</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    out_image[row, col, channel] = <span class="number">0.0</span></span><br><span class="line">    cv2.imwrite(<span class="string">"output_rank_"</span> + str(rk) + <span class="string">".jpg"</span>, out_image.astype(np.uint8))</span><br><span class="line">    frob_percent /= <span class="number">3.0</span></span><br><span class="line">    print(<span class="string">"Using %d singular values, %.1lf%% of the Frobenius norm."</span> % (rk, frob_percent * <span class="number">100</span>))</span><br></pre></td></tr></table></figure></p>
-<ol start="2">
-<li>Running the code and the Frobenius norm captured in each case is 97.15, 98.0%, 98.9%, 99.7%, corresonding to using 1,2,4 and 16 singular values.</li>
-</ol>
-<p><img src="/images/input.jpeg" alt="Input"><br><img src="/images/output_rank_1.jpg" alt=""><br><img src="/images/output_rank_2.jpg" alt=""><br><img src="/images/output_rank_4.jpg" alt=""><br><img src="/images/output_rank_16.jpg" alt=""></p>
-
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-      <div>
-        <ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>Post author:</strong>
-    吴箫
-  </li>
-  <li class="post-copyright-link">
-    <strong>Post link:</strong>
-    <a href="http://yoursite.com/2018/08/14/SVD实现/" title="SVD实现-穹妹的奇异值分解">http://yoursite.com/2018/08/14/SVD实现/</a>
-  </li>
-  <li class="post-copyright-license">
-    <strong>Copyright Notice: </strong>
-    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
-  </li>
-</ul>
-
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-10-04T10:49:10+08:00"
+              content="2018-10-04" >
+          10-04
+        </time>
       </div>
-    
 
-    <footer class="post-footer">
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2018/08/14/Trie树-后缀数组模板/" rel="next" title="Trie树, 后缀数组模板">
-                <i class="fa fa-chevron-left"></i> Trie树, 后缀数组模板
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/04/马兰花开/" rel="prev" title="">
-                 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
 
-    <div class="post-spread">
       
+
     </div>
   </div>
+  
+  
+  
+
+  
+
 
 
           </div>
@@ -442,10 +335,6 @@
 
 
           
-
-  
-
-
 
         </div>
         
@@ -683,10 +572,6 @@
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
 
   
 
