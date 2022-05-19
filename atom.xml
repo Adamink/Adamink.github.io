@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://wuxiao.site/"/>
+  <link href="http://adamink.github.io/"/>
   <updated>2022-05-19T20:38:50.362Z</updated>
-  <id>http://wuxiao.site/</id>
+  <id>http://adamink.github.io/</id>
   
   <author>
     <name>Xiao Wu</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Sph Water Simulation</title>
-    <link href="http://wuxiao.site/sphwatersimulation/"/>
-    <id>http://wuxiao.site/sphwatersimulation/</id>
+    <link href="http://adamink.github.io/sphwatersimulation/"/>
+    <id>http://adamink.github.io/sphwatersimulation/</id>
     <published>2020-12-16T18:46:44.000Z</published>
     <updated>2022-05-19T20:38:50.362Z</updated>
     
@@ -36,14 +36,14 @@
     </summary>
     
     
-      <category term="projects" scheme="http://wuxiao.site/tags/projects/"/>
+      <category term="projects" scheme="http://adamink.github.io/tags/projects/"/>
     
   </entry>
   
   <entry>
     <title>Multipath Event-Based Network for Low-Power Human Action Recognition</title>
-    <link href="http://wuxiao.site/eventbasedaction/"/>
-    <id>http://wuxiao.site/eventbasedaction/</id>
+    <link href="http://adamink.github.io/eventbasedaction/"/>
+    <id>http://adamink.github.io/eventbasedaction/</id>
     <published>2019-12-10T19:46:42.000Z</published>
     <updated>2022-05-19T20:36:41.304Z</updated>
     
@@ -62,7 +62,7 @@
     </summary>
     
     
-      <category term="projects" scheme="http://wuxiao.site/tags/projects/"/>
+      <category term="projects" scheme="http://adamink.github.io/tags/projects/"/>
     
   </entry>
   
